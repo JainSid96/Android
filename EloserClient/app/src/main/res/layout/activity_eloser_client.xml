@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+    <TextView
+        android:id="@+id/info0"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#FFFFFFFF"/>
+
+    <TextView
+        android:id="@+id/info1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/info0"
+        android:textColor="#FFFF0000"/>
+
+    <TextView
+        android:id="@+id/info2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/info1"
+        android:textColor="#FFFFFF00"/>
+
+    <TextView
+        android:id="@+id/info3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/info2"
+        android:textColor="#FF00FF00"/>
+
+    <TextView
+        android:id="@+id/info4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/info3"
+        android:textColor="#FFCACACA"/>
+
+    <ListView
+        android:id="@+id/list_discovered"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_below="@+id/info4"/>
+
+    <Button
+        android:id="@+id/send"
+        android:text="send"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"/>
+
+
+    <EditText
+        android:id="@+id/text_message"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_toLeftOf="@+id/send"
+        android:layout_alignParentBottom="true"/>
+
+    <TextView
+        android:id="@+id/text_messages"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="150dp"
+        android:layout_above="@id/text_message"/>
+
+</RelativeLayout>
+
